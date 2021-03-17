@@ -1,0 +1,102 @@
+<style>
+
+.menu-item {
+    font-family: sans-serif; 
+    font-size: 13px; 
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.main-menu {
+    text-align: center;
+}
+.main-menu i {
+    text-align: center;
+    font-size: 19px;
+}
+
+@media only screen and (max-width: 1240px) {
+  .tier-2 {
+        display: none;
+    }
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<title>Samsung WA Demo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><img style="width:140px; margin:-10px;" src="./SamsungLogo.png"></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="main-menu w3-hide-small w3-hide-medium">
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Galaxy 5G</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Mobile</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>TV &amp; Audio</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Home Appliances</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Smart Home</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Computing</p></a>
+
+        <div class="tier-2">
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Cyber Week Offers</p></a>
+        <a href="#projects" class="menu-item w3-bar-item w3-button"><p>Gift Ideas</p></a>
+        </div>
+        <span>&nbsp;</span>
+
+        <div style="margin-right: -10px;">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-user"></i>
+        </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img style="margin-top:44px;"class="w3-image" src="./CyberWeekSlide.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+  </div>
+</header>
+
+<!-- Page content -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;">
+
+<img style="margin-top:44px;"class="w3-image" src="./BlackFriOffers.png" alt="Architecture" width="1500" height="800">
+</header>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by IBM Watson Assistant</a></p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "25175036-e3ce-4638-89be-c50590f19978", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "77a5bbf2-976b-4afe-a7dc-e93b4b3807e5", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
